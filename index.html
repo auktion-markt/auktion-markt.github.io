@@ -55,7 +55,6 @@
         <script src="https://cdn.jsdelivr.net/npm/react@16.3.0/umd/react.development.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/react-dom@16.3.0/umd/react-dom.development.min.js"></script>
 
-
         <script>
             let itemsPerPage = 9;
             let organization = 'auktion-markt';
@@ -118,59 +117,6 @@
             }
 
             ReactDOM.render(React.createElement(RepositoriesApp, { name: 'World' }), document.getElementById('repositories'));
-
-
-
-
-/*
-
-            (function($) {
-
-                let repositories = $('#repositories');
-                let loadMorerepositories = $('#load-more-repositories');
-                let currentPage = 0;
-                
-                function appendPage(page, preAppendCallback, postAppendCallback) {
-                    $.getJSON('https://api.github.com/orgs/' + organization + '/repos?per_page=' + itemsPerPage + '&page=' + page, function(data) {
-                        if (typeof preAppendCallback === 'function') {
-                            preAppendCallback();
-                        }
-                        console.log(data);
-                        if (typeof postAppendCallback === 'function') {
-                            postAppendCallback(data);
-                        }
-                    })
-                }
-
-                function nextPage(cb) {
-                    appendPage(currentPage + 1, null, function(data) {
-                        let mayHasMoreElements = data.length >= itemsPerPage;
-                        if (mayHasMoreElements) {
-                            currentPage++;
-                        }
-                        for (var i = 0; i < data.length; i++) {
-                            repositories.append('<p>Repository</p>');
-                        }
-                        cb(mayHasMoreElements);
-                    });
-                }
-
-                loadMorerepositories.click(function() {
-                    if (!loadMorerepositories.hasClass('disabled')) {
-                        nextPage(function(mayHasMoreElements) {
-                            if (!mayHasMoreElements) {
-                                loadMorerepositories.addClass('disabled');
-                            }
-                        });
-                    }
-                });
-
-                nextPage(function(mayHasMoreElements) {
-                    if (mayHasMoreElements) {
-                        loadMorerepositories.removeClass('disabled');
-                    }
-                });
-            })(jQuery);*/
         </script>
     </body>
 </html>
