@@ -1,0 +1,44 @@
+.infobar {
+    background-color: #000000;
+    height: 33px;
+    line-height: 33px;
+}
+
+.navbar-aum {
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 20px;
+}
+
+.navbar-logo {
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+.navbar-enrichment-text {
+    margin-left: 10px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.repository-card {
+    border: 1px solid #efefef;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 250px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #990309;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 300;
+}
+
+footer {
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #990309;
+    color: white;
+}
